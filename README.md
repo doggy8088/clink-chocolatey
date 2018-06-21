@@ -4,7 +4,7 @@ Project Repo: [mridgers/clink: Bash's powerful command line editing in cmd.exe](
 
 ## How to build package
 
-1. Update `clink2.nuspec` file
+1. Update `clink.nuspec` file
     * version
     * releaseNotes
 2. Update `tools\chocolateyinstall.ps1`
@@ -16,19 +16,19 @@ Project Repo: [mridgers/clink: Bash's powerful command line editing in cmd.exe](
 ## How to test install locally
 
 ```cmd
-choco install clink2 -d -s .
+choco install clink -d -s .
 ```
 
 ## How to test uninstall locally
 
 ```cmd
-choco uninstall clink2 -d -s .
+choco uninstall clink -d -s .
 ```
 
 ## How to publish new version
 
 ```cmd
-choco push clink2.0.4.9.nupkg --source https://push.chocolatey.org/
+choco push clink.0.4.9.nupkg --source https://push.chocolatey.org/
 ```
 
 ## How to generate SHA256 Hash of a file
