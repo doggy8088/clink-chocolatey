@@ -1,9 +1,7 @@
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 
-. $tools\uninstall.ps1
- 
 Uninstall-ChocolateyPackage `
     -PackageName 'clink' `
-    -File (Get-Uninstaller -Name 'Clink v0.4.9') `
+    -File 'C:\Program Files (x86)\clink\1.2.0.42d871\clink_uninstall_1.2.0.42d871.exe' `
     -FileType 'EXE' `
     -SilentArgs '/S'
